@@ -1,0 +1,63 @@
+#+----------------------------------------------------------+
+#|               Evite alterar este arquivo                 |
+#|              Só altere se for recomendado                |
+#| Alterações erradas podem impactar a entrega da aplicação |
+#+----------------------------------------------------------+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ms-memory
+  namespace: azure
+  description: ""
+  tags:
+    - component
+    - standard
+  annotations:
+    # Backstage default annotations  
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/code-coverage: scm-only
+    backstage.io/kubernetes-id: "ms-memory"
+    backstage.io/template-origin: template:azure/component-base-cloud
+
+    # Governance App
+    techarch.governance-app.application: "vivo-ia"
+    techarch.governance-app.module: "default"
+    techarch.governance-app.technical_component_type: "none"
+    techarch.governance-app.technical_component_intrastructure_type: ""
+    techarch.governance-app.provider: "n/a"
+    techarch.governance-app.acronym: "vvia"
+    techarch.governance-app.ic: "tlv_fer_vivo ia"
+    techarch.governance-app.uuid: "55b82be0-97ea-11f0-b399-a2ef41cf5814"
+    techarch.governance-app.spti: "VVIA"
+    techarch.governance-app.projeto: "VIVO IA"
+
+    
+    # KUBERNTES
+    vivo.io/kubernetes-k8s-namespace-dev: "vvia-dev"
+    vivo.io/kubernetes-k8s-namespace-esteira1: "vvia-esteira1"
+    vivo.io/kubernetes-k8s-namespace-esteira2: "vvia-esteira2"
+    vivo.io/kubernetes-k8s-namespace-preprod: "vvia-preprod"
+    vivo.io/kubernetes-k8s-namespace-prodlike: "vvia-prodlike"
+    vivo.io/kubernetes-k8s-namespace-producao: "vvia-prod"
+
+    # Azure DevOps Plugin
+    dev.azure.com/project-repo: "VVIA - VIVO IA/ms-memory"
+    dev.azure.com/project: "VVIA - VIVO IA"
+    dev.azure.com/repo: "ms-memory"
+    dev.azure.com/organization: "telefonica-vivo-brasil"
+
+    # Sonarqube Plugin
+    sonarqube.org/project-key: "ms-memory29b6c026-6c74-41f3-ab03-66f6193bc81a"
+
+    # Framework
+    arqtech.telefonica.com.br/framework: none
+    arqtech.telefonica.com.br/framework-version: none
+
+    # Language
+    arqtech.telefonica.com.br/language: none
+    arqtech.telefonica.com.br/language-version: none
+spec:
+  type: service
+  lifecycle: experimental   
+  owner: "undefined-owner"
+  system: default

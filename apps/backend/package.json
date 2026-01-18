@@ -1,0 +1,14 @@
+{
+  "name": "@astroai/backend",
+  "private": true,
+  "scripts": {
+    "install": "make install",
+    "install:dev": "make install_dev",
+    "lint": "make lint",
+    "format": "make format",
+    "test": "make test",
+    "dev": "make run_dev",
+    "start": "make run",
+    "seeds": "make run_seeds"
+  }
+}

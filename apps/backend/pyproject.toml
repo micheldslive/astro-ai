@@ -1,0 +1,16 @@
+[project]
+name = "ms-memory"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.117.1",
+    "loguru>=0.7.3",
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.10.1",
+    "pymongo>=4.15.1",
+    "pytz>=2025.2",
+    "uvicorn[standard]>=0.34.3",
+]
