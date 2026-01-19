@@ -1,0 +1,14 @@
+{
+  "name": "@astroai/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./tailwind.config": "./tailwind.config.ts",
+    "./globals.css": "./globals.css"
+  },
+  "devDependencies": {
+    "@astroai/ts-config": "workspace:*",
+    "tailwindcss": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
